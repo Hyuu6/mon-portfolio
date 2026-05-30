@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Étudiant en Informatique</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Fond animé de particules -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav id="navbar">
+    <div class="nav-logo">
+      <span class="logo-bracket">&lt;</span>
+      <span class="logo-name">Dev</span>
+      <span class="logo-bracket">/&gt;</span>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero" class="nav-link">Accueil</a></li>
+      <li><a href="#about" class="nav-link">À propos</a></li>
+      <li><a href="#skills" class="nav-link">Compétences</a></li>
+      <li><a href="#projects" class="nav-link">Projets</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section id="hero">
+    <div class="hero-content">
+      <p class="hero-overline"><i class="fa-solid fa-terminal"></i> &nbsp;Disponible pour des collaborations</p>
+      <h1 class="hero-title">
+        Ingénieur<br />
+        <span class="glitch" data-text="Logiciel.">Logiciel.</span>
+      </h1>
+      <p class="hero-desc">
+        Étudiant passionné en <strong>Informatique & Génie Logiciel</strong>.<br />
+        Je construis des solutions propres, efficaces et orientées résultats.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">Voir mes projets <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#contact" class="btn btn-ghost">Me contacter</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="code-block">
+        <div class="code-bar">
+          <span class="dot dot-red"></span>
+          <span class="dot dot-yellow"></span>
+          <span class="dot dot-green"></span>
+          <span class="code-filename">profile.py</span>
+        </div>
+        <pre class="code-content"><code><span class="c-kw">class</span> <span class="c-cl">Developer</span>:
+  <span class="c-fn">def</span> <span class="c-fn">__init__</span>(self):
+    self.name    = <span class="c-str">"Moi"</span>
+    self.role    = <span class="c-str">"Étudiant"</span>
+    self.stack   = [
+      <span class="c-str">"Python"</span>,
+      <span class="c-str">"HTML5"</span>,
+      <span class="c-str">"CSS3"</span>,
+      <span class="c-str">"JavaScript"</span>
+    ]
+    self.goal    = <span class="c-str">"Innover"</span>
+
+  <span class="c-fn">def</span> build(self, idea):
+    <span class="c-kw">return</span> idea <span class="c-op">+</span> <span class="c-str">" ✓"</span>
+<span class="cursor">█</span></code></pre>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <i class="fa-solid fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- ===================== À PROPOS ===================== -->
+  <section id="about">
+    <div class="section-label"><span>01</span> À propos</div>
+    <div class="about-grid">
+      <div class="about-text">
+        <h2 class="section-title">Qui suis-je <span class="accent">?</span></h2>
+        <p>
+          Je suis un étudiant en <strong>Informatique et Ingénierie Logicielle</strong>, animé par la curiosité et le goût du défi technique. Mon parcours m'a appris à transformer des idées complexes en solutions concrètes.
+        </p>
+        <p>
+          Méthodique dans ma façon de structurer un projet, créatif dans ma manière de résoudre les problèmes, je construis mes compétences une ligne de code à la fois.
+        </p>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-num">2+</span>
+            <span class="stat-label">Années d'étude</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">5+</span>
+            <span class="stat-label">Technologies</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">∞</span>
+            <span class="stat-label">Motivation</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-card-wrap">
+        <div class="about-card">
+          <div class="about-avatar">
+            <i class="fa-solid fa-user-astronaut"></i>
+          </div>
+          <div class="about-info">
+            <p><i class="fa-solid fa-graduation-cap"></i> &nbsp;Étudiant en Informatique</p>
+            <p><i class="fa-solid fa-map-pin"></i> &nbsp;Cameroun</p>
+            <p><i class="fa-solid fa-code"></i> &nbsp;Génie Logiciel</p>
+            <p><i class="fa-solid fa-circle-check accent"></i> &nbsp;Ouvert aux opportunités</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== COMPÉTENCES ===================== -->
+  <section id="skills">
+    <div class="section-label"><span>02</span> Compétences</div>
+    <h2 class="section-title">Mon <span class="accent">stack</span> technique</h2>
+    <div class="skills-grid">
+
+      <div class="skill-card">
+        <div class="skill-icon"><i class="fa-brands fa-python"></i></div>
+        <h3>Python</h3>
+        <p>Manipulation de données, scripts d'automatisation, algorithmes et logique métier.</p>
+        <div class="skill-bar">
+          <div class="skill-fill" style="--w: 80%"></div>
+        </div>
+        <span class="skill-level">Intermédiaire</span>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon"><i class="fa-brands fa-html5"></i></div>
+        <h3>HTML5</h3>
+        <p>Structure sémantique, accessibilité et mise en page moderne de pages web.</p>
+        <div class="skill-bar">
+          <div class="skill-fill" style="--w: 75%"></div>
+        </div>
+        <span class="skill-level">Intermédiaire</span>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon"><i class="fa-brands fa-css3-alt"></i></div>
+        <h3>CSS3</h3>
+        <p>Flexbox, Grid, animations, responsive design et interfaces esthétiques.</p>
+        <div class="skill-bar">
+          <div class="skill-fill" style="--w: 70%"></div>
+        </div>
+        <span class="skill-level">Intermédiaire</span>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon"><i class="fa-brands fa-js"></i></div>
+        <h3>JavaScript</h3>
+        <p>Logique cliente, DOM, événements et interactions dynamiques côté navigateur.</p>
+        <div class="skill-bar">
+          <div class="skill-fill" style="--w: 60%"></div>
+        </div>
+        <span class="skill-level">Débutant avancé</span>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon"><i class="fa-solid fa-file-lines"></i></div>
+        <h3>Cahier des charges</h3>
+        <p>Rédaction de spécifications techniques, analyse des besoins et planification.</p>
+        <div class="skill-bar">
+          <div class="skill-fill" style="--w: 85%"></div>
+        </div>
+        <span class="skill-level">Avancé</span>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon"><i class="fa-solid fa-gears"></i></div>
+        <h3>Algorithmique</h3>
+        <p>Conception de solutions, structures de données et optimisation de code.</p>
+        <div class="skill-bar">
+          <div class="skill-fill" style="--w: 72%"></div>
+        </div>
+        <span class="skill-level">Intermédiaire</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== PROJETS ===================== -->
+  <section id="projects">
+    <div class="section-label"><span>03</span> Projets</div>
+    <h2 class="section-title">Ce que j'ai <span class="accent">réalisé</span></h2>
+    <div class="projects-grid">
+
+      <article class="project-card">
+        <div class="project-header">
+          <div class="project-icon"><i class="fa-solid fa-sitemap"></i></div>
+          <div class="project-links">
+            <a href="#" aria-label="Code source"><i class="fa-brands fa-github"></i></a>
+            <a href="#" aria-label="Voir le projet"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="project-body">
+          <h3>Cahier des charges — Site vitrine</h3>
+          <p>Conception et rédaction d'un cahier des charges complet pour un site vitrine d'expertise technique : analyse des besoins, arborescence, spécifications fonctionnelles et non-fonctionnelles.</p>
+        </div>
+        <div class="project-footer">
+          <span class="tag">Analyse</span>
+          <span class="tag">Spécifications</span>
+          <span class="tag">Documentation</span>
+        </div>
+      </article>
+
+      <article class="project-card featured">
+        <div class="project-badge">⭐ Featured</div>
+        <div class="project-header">
+          <div class="project-icon"><i class="fa-brands fa-python"></i></div>
+          <div class="project-links">
+            <a href="#" aria-label="Code source"><i class="fa-brands fa-github"></i></a>
+            <a href="#" aria-label="Voir le projet"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="project-body">
+          <h3>Scripts d'automatisation Python</h3>
+          <p>Développement d'une suite de scripts Python pratiques pour l'automatisation de tâches répétitives : gestion de fichiers, traitement de données, génération de rapports automatisés.</p>
+        </div>
+        <div class="project-footer">
+          <span class="tag">Python</span>
+          <span class="tag">Automatisation</span>
+          <span class="tag">Scripts</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section id="contact">
+    <div class="section-label"><span>04</span> Contact</div>
+    <h2 class="section-title">Travaillons <span class="accent">ensemble</span></h2>
+    <p class="contact-intro">Une idée de projet, une opportunité de stage ou juste envie d'échanger ? Écrivez-moi.</p>
+
+    <div class="contact-wrap">
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <span>monmail@example.com</span>
+        </div>
+        <div class="contact-item">
+          <i class="fa-brands fa-github"></i>
+          <span>github.com/monprofil</span>
+        </div>
+        <div class="contact-item">
+          <i class="fa-brands fa-linkedin"></i>
+          <span>linkedin.com/in/monprofil</span>
+        </div>
+        <div class="contact-social">
+          <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+
+      <form id="contactForm" class="contact-form" novalidate>
+        <div class="form-group">
+          <label for="name">Nom complet</label>
+          <input type="text" id="name" name="name" placeholder="Jean Dupont" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="jean@exemple.com" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Votre message ici..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">
+          <span class="btn-text">Envoyer le message</span>
+          <i class="fa-solid fa-paper-plane"></i>
+        </button>
+        <div id="form-feedback" class="form-feedback" aria-live="polite"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <div class="footer-inner">
+      <p>Conçu & développé avec <span class="accent">♥</span> — 2025</p>
+      <p class="footer-sub">Étudiant en Informatique & Ingénierie Logicielle</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
